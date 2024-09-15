@@ -51,7 +51,12 @@ function selectCard(card) {
             
 
             <p> Ce screen est la preuve que vous avez réussi à déchiffrer le code. </p>
-            <p> Vous pouvez maintenant avoir votre cadeau 😉. </p>
+            <p> Félicitations ! </p>
+
+            <br>
+
+            <p> Votre cadeau vous sera prochainement livré. </p>
+            <i> Pars un élégant jeune homme </i>
 
 
             </div>
