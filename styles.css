@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 150px; /* Hauteur pour rendre les cartes carrées */
+}
+
+.card img {
+    max-width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1em;
+    margin-top: 8px;
+}
+
+.card.selected {
+    border: 3px solid #007BFF; /* Couleur de la sélection */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+#win{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(178, 255, 167);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+#win p{
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    
+}
